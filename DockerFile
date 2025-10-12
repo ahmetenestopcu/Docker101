@@ -1,0 +1,22 @@
+# Dockerfile
+
+# Step 1: Start with an official, lightweight Python base image.
+FROM python:3.9-slim
+
+# Step 2: Set the working directory inside the container.
+WORKDIR /app
+
+# Step 3: Copy the requirements file first and install dependencies.
+# This is a best practice for layer caching. If the requirements don't change,
+# Docker won't need to reinstall them every time you change your code.
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Step 4: Copy the rest of the application code into the working directory.
+COPY . .
+
+# Step 5: Inform Docker that the container will listen on port 5000 at runtime.
+EXPOSE 5000
+
+# Step 6: Define the command to run when the container starts.
+CMD ["python", "app.py"]
