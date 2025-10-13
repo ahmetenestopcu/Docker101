@@ -49,7 +49,7 @@ Run the following command in your terminal. This command reads the `Dockerfile` 
 - `.` tells Docker to look for the `Dockerfile` in the current directory.
 
 ```bash
-docker build -t my-python-app .
+docker build -t my-python-app -f DockerFile .
 ```
 
 You will see output in your terminal as Docker executes each step in the `Dockerfile`.
@@ -59,7 +59,7 @@ You will see output in your terminal as Docker executes each step in the `Docker
 Now that the image is built, you can run it as a container.
 
 ```bash
-docker run -p 8080:5000 my-python-app
+docker run --rm -p 8080:5000 my-python-app
 ```
 
 **What does this command do?**
