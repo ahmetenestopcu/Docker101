@@ -20,7 +20,7 @@ Before you begin, ensure you have **Docker** installed on your machine.
 
 - [Download and install Docker Desktop](https://www.docker.com/products/docker-desktop/) (for Mac and Windows) or Docker Engine (for Linux).
 
-## 🚀 How to Run This Project: A Step-by-Step Guide
+## How to Run This Project: A Step-by-Step Guide
 
 Follow these steps to build and run the application on your own machine.
 
@@ -67,7 +67,7 @@ docker run --rm -p 8080:5000 my-python-app
 - `-p 8080:5000`: This is the port mapping. It connects your computer's (the "host") port `8080` to the container's internal port `5000`. Our Flask app runs on port `5000` inside the container, and this makes it accessible from your machine.
 - `my-python-app`: The name of the image to run.
 
-### Step 5: Access the Application ✅
+### Step 5: Access the Application 
 
 Everything should be running now! Open your web browser and navigate to the following address:
 
