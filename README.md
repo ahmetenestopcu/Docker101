@@ -30,7 +30,7 @@ First, clone this repository to your local machine using Git.
 
 ```bash
 # Replace YOUR_USERNAME/YOUR_REPOSITORY with your actual GitHub info
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 ```
 
 ### Step 2: Navigate to the Project Directory
@@ -38,7 +38,7 @@ git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.
 Open your terminal and move into the cloned project folder.
 
 ```bash
-cd simple-docker-app
+cd Docker101
 ```
 
 ### Step 3: Build the Docker Image
